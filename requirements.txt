@@ -4,4 +4,4 @@ torch
 torchvision 
 torchaudio
 transformers
-dotenv  
+python-dotenv  
