@@ -11,9 +11,17 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Set up environment variables
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = r"service_account_ocr.json"
 NOTION_TOKEN = os.getenv("NOTION_TOKEN")
 DATABASE_ID = os.getenv("DATABASE_ID")
+project_id = os.getenv("GOOGLE_PROJECT_ID")
+private_key_id = os.getenv("GOOGLE_PRIVATE_KEY_ID")
+private_key = os.getenv("GOOGLE_PRIVATE_KEY").replace('\\n', '\n')
+client_email = os.getenv("GOOGLE_CLIENT_EMAIL")
+client_id = os.getenv("GOOGLE_CLIENT_ID")
+auth_uri = os.getenv("GOOGLE_AUTH_URI")
+token_uri = os.getenv("GOOGLE_TOKEN_URI")
+auth_provider_x509_cert_url = os.getenv("GOOGLE_AUTH_PROVIDER_X509_CERT_URL")
+client_x509_cert_url = os.getenv("GOOGLE_CLIENT_X509_CERT_URL")
 
 headers = {
     "Authorization": "Bearer " + NOTION_TOKEN,
