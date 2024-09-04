@@ -1,0 +1,10 @@
+app.py
+vision_api
+.env
+image-app.py
+Sample-handwritten-text-input-for-OCR.png
+account_credentials.json
+test_pic.jpg
+test_this_text.jpeg
+.env
+service_account_ocr.json

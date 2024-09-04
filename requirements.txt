@@ -1,0 +1,7 @@
+google-cloud-vision
+streamlit==1.29.0
+torch 
+torchvision 
+torchaudio
+transformers
+dotenv  
